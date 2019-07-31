@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#373d4a"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textColor="#6F6C6C"
+        android:background="#373d4a"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name"
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imv_open"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp10"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name_activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_activity"
+        app:srcCompat="@drawable/ic_open_icon"
+        android:contentDescription="@string/icon_open" />
+
+    <ImageView
+        android:id="@+id/tv_back"
+        android:layout_width="@dimen/dp75"
+        android:layout_height="@dimen/dp40"
+        android:src="@drawable/back_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name_activity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_activity"
+        android:contentDescription="@string/btn_back" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

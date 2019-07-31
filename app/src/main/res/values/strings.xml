@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CaseStudies</string>
+
+    <string name="image">Image</string>
+    <string name="los_angeles_ca_usa">LOS ANGELES CA, USA</string>
+    <string name="peter_arando">PETER ARANDO</string>
+    <string name="_8">8</string>
+    <string name="_29">29</string>
+
+    <string name="icon_open">icon open</string>
+    <string name="btn_back">btn back</string>
+</resources>

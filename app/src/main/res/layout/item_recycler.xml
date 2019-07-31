@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="#EED0CA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp5"
+        tools:ignore="MissingConstraints">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:orientation="vertical"
+        android:background="#EED0CA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dp5">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/anh1"
+            android:contentDescription="@string/image" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:letterSpacing="0.16"
+            tools:text="@string/peter_arando"
+            android:textColor="@color/colorBrown_grey"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/tv_place"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:drawableStart="@drawable/ic_map_icon"
+            android:drawablePadding="@dimen/dp10"
+            android:letterSpacing="0.16"
+            tools:text="@string/los_angeles_ca_usa"
+            android:textColor="@color/colorBrown_grey"
+            android:textSize="@dimen/sp10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_number_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp20"
+            android:layout_marginEnd="@dimen/dp28"
+            android:drawableEnd="@drawable/ic_message_icon"
+            android:drawablePadding="@dimen/dp10"
+            tools:text="@string/_8"
+            android:textColor="@color/colorBrown_grey"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_place" />
+
+        <TextView
+            android:id="@+id/tv_heart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dp10"
+            android:drawableEnd="@drawable/ic_heart_brown"
+            android:drawablePadding="@dimen/dp10"
+            tools:text="@string/_29"
+            android:textColor="@color/colorBrown_grey"
+            android:textSize="@dimen/sp15"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_number_mess"
+            app:layout_constraintEnd_toStartOf="@+id/tv_number_mess"
+            app:layout_constraintTop_toTopOf="@+id/tv_number_mess" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
